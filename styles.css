@@ -1,0 +1,466 @@
+/*_______________________START______________________Default Inputs____________START__________________________________*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(2, 37, 93);
+}
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    font-size: 50px;
+    line-height: 40px;
+    color: rgb(0, 114, 114);
+}
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    font-size: 46px;
+    line-height: 40px;
+    color: rgb(0, 114, 114);
+}
+h3 {
+    margin-left: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    font-size: 30px;
+    line-height: 40px;
+    color: rgb(0, 114, 114);
+}
+
+
+
+.between {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.horizontal-skill{
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+/*_____________________END_________________ Default Inputs________________END____________________*/
+/*__________________________________________END________________________________________________*/
+
+/*__________________START_________<<<<Section Navbar >>>__________________START_______________________*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px 80px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+}
+
+.navbar-links li a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    padding:  10px;
+    display: block;
+    margin-right: 10px;
+    transition: 0.3 ease;
+   
+}
+.dropbtn{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: aliceblue;
+    padding:  10px;
+    display: block;
+    margin-right: 10px;
+    transition: 0.3 ease;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.navbar-links li a:hover,
+.navbar-links .dropdown li button:hover
+{
+    color: rgb(0, 114, 114);
+}
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 800px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items:  flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/*NavLOGO*/
+.brand-title img {
+    width: 50px;
+}
+.animation-logo{
+    
+    animation: vor-und-zurück alternate 2 3s 1s ease-in-out;
+}
+@keyframes vor-und-zurück {
+    from  { transform: translateX(0)     rotate(0deg) }
+    to    { transform: translateX(240px) rotate(360deg) }
+    
+}
+
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #96d8ff;
+    border-radius: 10%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5%;
+  }
+  
+  .dropdown-content a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #96d8ff;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/*____________________END___________<<<Section Navbar>>>> ______________END_____________________*/
+/*__________________________________________END________________________________________________*/
+
+/*__________________START_________________<<<<Section Titel>>>>__________________START___________________________*/
+
+/*MyPhoto*/
+.photome {
+    width: 120%;
+    margin-top: -150px;
+    animation: out-in forwards 3s ease-in-out;
+}
+@keyframes out-in {
+    from {transform: translateX(-600px)}
+    to{transform: translateX(-80px);}
+}
+
+/*Text Intrduce*/
+.hero {
+    align-items: center;
+    padding: 70px 15rem;
+    display: flex;
+    
+}
+.hi {
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-left: -180px;
+    font-size: 80px;
+}
+.intreduce{
+    margin-top: -200px;    
+    text-align: center;
+}
+.letmeintreduceyou {
+    margin-left: 100px;
+}
+.imphi {
+    margin-left: 450px;
+    
+}
+
+/*AutoWrite Welcome*/
+h2::before,
+h3::before,
+h1::before {
+    content: '';
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: -30px;
+    left: 0;
+}
+h2::before{
+    background: rgb(2, 37, 93);
+    animation: typewriter 1 2s 2s ease-out forwards;
+}
+h3::before {
+    background: rgb(2, 37, 93);
+    animation: typewriter 1 2s 4s ease-out forwards;
+}
+h1::before{
+    background: rgb(2, 37, 93);
+    animation: typewriter 1 1.5s 5.5s ease-out forwards;
+}
+
+/*Buttonaboutme*/
+.buttonaboutme {
+    background-image: url("/img/button.png");
+    background-color: transparent;
+    color: rgb(0, 114, 114);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    animation: clickit 8.5s;
+    
+}
+.buttonaboutme:hover{
+    color: aqua;
+}
+@keyframes clickit  {
+    0% {opacity: 0}
+    80% {opacity: 0}
+    100% {opacity: 1}
+}
+@keyframes typewriter {
+    to {
+        left: 100%;
+
+    }
+}
+
+/*____________________END___________<<<Section Titel>>>> ______________END_____________________*/
+/*__________________________________________END________________________________________________*/
+
+/*___________________START____________<<<Section About me>>>> ______________START_____________________*/
+
+.aboutme {    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #96d8ff;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+    width: 50%;
+    
+}
+.about{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-gap: 40px;
+    padding-left: 8.5%;
+}
+.aboutPhoto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    
+
+}
+.aboutInfo{
+    color: #fff;
+    opacity: 0.5;
+    font-size: 20px;
+    line-height: 40px;
+    border: 2px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-color: rgb(2, 131, 131);
+    border-radius: 12px;
+    border-right: 10px;
+    border-bottom: 10px;
+    background-color: #333 ;
+}
+
+
+/*____________________END___________<<<Section About Me>>>> ______________END_____________________*/
+/*__________________________________________END________________________________________________*/
+
+/*_________________START______________<<<Section Skill>>>> ______________START_____________________*/
+
+#ProjectsandSkill{
+    background-color: #96d8ff;
+    padding-top: 15px;
+}
+.skills{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 114, 114);
+    text-align: right;
+    margin-top: 110px;
+    margin-bottom: -20px;
+    margin-left: 90px;
+    width: 50%;
+}
+
+.div--backround{
+    background-color: #96d8ff;
+    width: 100%;
+    height: 700px;
+    padding-left: 330px;
+    padding-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62%;
+    align-content: center;
+}
+.Talkme {
+    padding-top: 25px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(2, 131, 131);
+}
+
+#skill-img{
+    padding-top: 0px;
+    width: 250px;
+    height: 250px;
+}
+.fe-box, .fe-box1, .fe-box2, .fe-box3, .fe-box4, .fe-box5, .fe-box6{
+    position: relative;
+}
+
+.fe-box .click {
+    position: absolute;
+    bottom: -200px;
+    right: 130%;
+}
+.fe-box1 .click {
+    position: absolute;
+    bottom: -200px;
+    right: 80%;
+}
+.fe-box3 .click {
+    position: absolute;
+    bottom: -200px;
+    left: 40%;
+}
+.fe-box2 .click {
+    position: absolute;
+    bottom: -200px;
+    left: 90%;
+}
+.fe-box4 .click {
+    position: absolute;
+    bottom: -500px;
+    right: 105%;
+}
+.fe-box5 .click {
+    position: absolute;
+    bottom: -500px;
+    left: 15%;
+}
+.fe-box6 .click {
+    position: absolute;
+    bottom: -500px;
+    left: 65%;
+}
+
+/*____________________END___________<<<Section Skill>>>> ______________END_____________________*/
+/*__________________________________________END________________________________________________*/
+
+/*_______________________________<<<Section Contact>>>> ___________________________________*/
+
+
+#Contact {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #96d8ff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 50px;
+    padding-left: 35%;
+    width: 500px;
+    margin-top: -40px;
+}
+
+#Contact-aufbau {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 0%;
+    grid-gap: 40px;
+    padding-left: 5.5%;
+}
+.foto{
+    width: 40%;
+    padding: 5%;
+    margin-left: 60%;
+    margin-top: -70px;
+}
+/*____________________END___________<<<Section Contact>>>> ______________END_____________________*/
