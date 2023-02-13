@@ -271,7 +271,7 @@ h1::before{
 
 /*Buttonaboutme*/
 .buttonaboutme {
-    background-image: url("/img/button.png");
+    background-image: url("img/button.png");
     background-color: transparent;
     color: rgb(0, 114, 114);
     border: 0;
